@@ -83,7 +83,7 @@
                 <ul class="menu-items">
                     <li><a href="{{route('student.index')}}">Students</a></li>
                     <li><a href="{{route('subject.index')}}">Subjects</a></li>
-                    <li><a href="{{route('rating.index')}}">{{__('site_lable.rating')}}</a></li>
+                    <li><a href="{{route('rating.index')}}">Rating</a></li>
                 </ul>
             </div>
             <div class="col-md-10">

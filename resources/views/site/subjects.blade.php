@@ -12,7 +12,7 @@
             @if(count($subjects))
                 <ul>
                     @foreach($subjects as $subject)
-                        <li>{{$subject->name}}</li>
+                        <li>{{$subject->name_en}}</li>
                     @endforeach
                 </ul>
             @else

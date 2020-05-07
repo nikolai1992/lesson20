@@ -42,8 +42,9 @@ class SubjectController extends Controller
     {
         //
         $this->validate($request, [
-            "name" => 'max:191|required',
-            'email' => 'email:filter|unique:students,email,'.$student->id
+            "name_en" => 'max:191',
+            "name_ru" => 'max:191',
+            'email' => 'email:filter|unique:students'
         ]);
         $data = $request->all();
         unset($data["students_id"]);
@@ -87,6 +88,11 @@ class SubjectController extends Controller
     public function update(Request $request, Subject $subject)
     {
         //
+        $this->validate($request, [
+            "name_en" => 'max:191',
+            "name_ru" => 'max:191',
+            'email' => 'email:filter|unique:students'
+        ]);
         $data = $request->all();
         unset($data["students_id"]);
         $subject->update($data);

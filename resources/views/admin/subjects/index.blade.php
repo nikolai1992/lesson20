@@ -24,7 +24,7 @@
                 <tbody>
                 @foreach($subjects as $subject)
                     <tr>
-                        <td>{{$subject->name}}</td>
+                        <td>{{$subject->name_en}}</td>
                         <td>
                             @foreach($subject->students as $student)
                                 <p>{{$student->name}}</p>

@@ -29,7 +29,7 @@ class StudentController extends Controller
     public function create()
     {
         //
-        $subjects = Subject::pluck('name', 'id');
+        $subjects = Subject::pluck('name_en', 'id');
         return view('admin.students.create', compact('subjects'));
     }
 
@@ -80,7 +80,7 @@ class StudentController extends Controller
     public function edit(Student $student)
     {
         //
-        $subjects = Subject::pluck('name', 'id');
+        $subjects = Subject::pluck('name_en', 'id');
         return view('admin.students.edit', compact('subjects', 'student'));
     }
 
@@ -115,6 +115,6 @@ class StudentController extends Controller
     {
         //
         $student->delete();
-        return redirect()->route('admin.student.index');
+        return redirect()->route('student.index');
     }
 }

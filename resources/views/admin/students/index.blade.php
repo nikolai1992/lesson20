@@ -37,7 +37,7 @@
                         <td>{{$student->name}}</td>
                         <td>
                             @foreach($student->subjects as $subject)
-                                <p>{{$subject->name}}</p>
+                                <p>{{$subject->name_en}}</p>
                             @endforeach
                         </td>
                         <td>{{$student->email}}</td>

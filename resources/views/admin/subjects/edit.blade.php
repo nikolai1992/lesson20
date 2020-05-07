@@ -6,11 +6,11 @@
             {!! Form::open(['url'=>route('subject.update', $subject->id),'method'=>'patch']) !!}
                 <div class="row">
                     <label>Name en</label>
-                    <input name="name_en" class="form-control" value="{{$student->name_en}}">
+                    <input name="name_en" class="form-control" value="{{$subject->name_en}}">
                 </div>
                 <div class="row">
                     <label>Name ru</label>
-                    <input name="name_ru" class="form-control" value="{{$student->name_ru}}">
+                    <input name="name_ru" class="form-control" value="{{$subject->name_ru}}">
                 </div>
                 <div class="row">
                     <label>Students</label>
